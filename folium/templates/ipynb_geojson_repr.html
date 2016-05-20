@@ -53,8 +53,9 @@
           {{ add_mark }}
           {% endfor %}
 
-          {% for line, add_line in lines %}
+          {% for line, popup, add_line in lines %}
           {{ line }}
+          {{ popup }}
           {{ add_line }}
           {% endfor %}
 
@@ -73,6 +74,8 @@
           {% for legend in map_legends %}
           {{ legend }}
           {% endfor %}
+
+          {{ fit_bounds }}
 
       };
 

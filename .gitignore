@@ -44,3 +44,11 @@ nosetests.xml
 #Virtualenv
 ENV
 .env
+
+# Tests products
+.cache
+data.png
+map.html
+
+# documentation builds
+docs/_build
